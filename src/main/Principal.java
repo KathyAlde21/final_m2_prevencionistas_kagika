@@ -46,7 +46,7 @@ public class Principal {
             String opcion = scanner.nextLine();
 
             switch (opcion) {
-                       // Cliente
+                // Cliente
 	            case "1" -> MenuCliente.almacenar(contenedor, scanner);
 	            case "2" -> MenuCliente.eliminar(contenedor, scanner);
 	            case "3" -> MenuCliente.listar(contenedor);
