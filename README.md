@@ -130,26 +130,26 @@
     <li>Un cliente puede registrar ninguno o muchos accidentes.</li>
     <li>Un cliente debe tener una o muchas visitas en terreno.</li>
     <li>Una visita en terreno debe tener una o más revisiones por cada ocasión.</li>
-    <li>**Todas las clases antes indicadas deben tener claramente declarados sus atributos** (definir el tipo de dato es parte de la solución), método toString (), un constructor que no reciba parámetros, un constructor que reciba todos los atributos de la clase como parámetros, métodos mutadores y métodos acceso res.</li>
+    <li><b>Todas las clases antes indicadas deben tener claramente declarados sus atributos</b> (definir el tipo de dato es parte de la solución), método toString (), un constructor que no reciba parámetros, un constructor que reciba todos los atributos de la clase como parámetros, métodos mutadores y métodos acceso res.</li>
     <li>Debe crear también una interface llamada Asesoría, la que debe tener declarado el método analizarUsuario (). Recuerde que, al ser una interface, solo deberá considerar la declaración del método.</li>
-    <li>Las **clases Profesional, Administrativo y Cliente deben extender desde la clase Usuario**. Además, se pide que en cada clase existan los métodos adicionales siguientes:</li>
+    <li>Las <b>clases Profesional, Administrativo y Cliente deben extender desde la clase Usuario</b>. Además, se pide que en cada clase existan los métodos adicionales siguientes:</li>
     <ul>
-        <li>**Usuario:** el método mostrarEdad (), el cual retorna un mensaje que diga “El usuario tiene X años” y en donde X es la edad del usuario en cuestión, y el método analizar Usuario (), que despliegue el nombre y el RUN. Considere que esta clase debe implementar la interface Asesoría.</li>
-        <li>**Cliente:** el método obtenerNombre(), que retorna un String con el nombre completo del cliente (nombres + apellidos), el método obtenerSistemaSalud() que de acuerdo al valor registrado en el objeto despliega el tipo de sistema de salud, y el método analizarUsuario() que debe desplegar los datos del método del mismo nombre correspondiente a la clase padre y la dirección del cliente junto con la comuna.</li>
-        <li>**Profesional:** debe implementar el método analizarUsuario(), el que debe desplegar los datos del método del mismo nombre de la clase padre, y el título y fecha de ingreso del profesional.</li>
-        <li>**Administrativo:** el método analizarUsuario(), el cual debe mostrar los datos del método del mismo nombre correspondiente a la clase padre, junto con el área a la que pertenece el administrativo y su experiencia previa.</li>
-        <li>**Capacitación:** el método mostrarDetalle(), que retorna un mensaje con el texto “La capacitación será en A a las B del día C, y durará D minutos”, en donde A es el lugar, B es la hora, C es el día y D son los minutos.</li>
+        <li><b>Usuario:</b> el método mostrarEdad (), el cual retorna un mensaje que diga “El usuario tiene X años” y en donde X es la edad del usuario en cuestión, y el método analizar Usuario (), que despliegue el nombre y el RUN. Considere que esta clase debe implementar la interface Asesoría.</li>
+        <li><b>Cliente:</b> el método obtenerNombre(), que retorna un String con el nombre completo del cliente (nombres + apellidos), el método obtenerSistemaSalud() que de acuerdo al valor registrado en el objeto despliega el tipo de sistema de salud, y el método analizarUsuario() que debe desplegar los datos del método del mismo nombre correspondiente a la clase padre y la dirección del cliente junto con la comuna.</li>
+        <li><b>Profesional:</b> debe implementar el método analizarUsuario(), el que debe desplegar los datos del método del mismo nombre de la clase padre, y el título y fecha de ingreso del profesional.</li>
+        <li><b>Administrativo:</b> el método analizarUsuario(), el cual debe mostrar los datos del método del mismo nombre correspondiente a la clase padre, junto con el área a la que pertenece el administrativo y su experiencia previa.</li>
+        <li><b>Capacitación:</b> el método mostrarDetalle(), que retorna un mensaje con el texto “La capacitación será en A a las B del día C, y durará D minutos”, en donde A es el lugar, B es la hora, C es el día y D son los minutos.</li>
         <li>Cree la clase **Contenedor**, la cual deberá tener declarado como atributos dos listas: una lista de instancias de la interface Asesoria, y una lista de objetos de la clase Capacitacion. En la primera lista pueden ser almacenados distintos tipos de usuarios. Los métodos que debe contener esta clase son:</li>
-        <li>**Almacenar cliente:** permite agregar un nuevo cliente a la lista de instancias de la interface Asesoria.</li>
-        <li>**Almacenar profesional:** permite agregar un nuevo profesional a la lista de instancias de la interface Asesoria.</li>
-        <li>**Almacenar administrativo:** permite agregar un nuevo administrativo a la lista de instancias de la interface Asesoria.</li>
-        <li>**Almacenar capacitación:** permite agregar una nueva capacitación a la lista de instancias de la clase Capacitación.</li>
-        <li>**Eliminar usuario:** permite eliminar un usuario desde la lista de interfaces de Asesoría acuerdo con el RUN del usuario.</li>
-        <li>**Listar usuarios:** permite desplegar la lista completa de usuarios, independiente del tipo. En este método solo se deben desplegar los datos de la clase usuario.</li>
-        <li>**Listar usuarios por tipo:** recibe un tipo de usuario (cliente, administrador o profesional), y retorna los datos respectivos según el tipo de usuario.</li>
-        <li>**Listar capacitaciones:** este método despliega las capacitaciones registradas en la lista respectiva, junto con los datos del cliente al que está asociada dicha capacitación.</li>
+        <li><b>Almacenar cliente:</b> permite agregar un nuevo cliente a la lista de instancias de la interface Asesoria.</li>
+        <li><b>Almacenar profesional:</b> permite agregar un nuevo profesional a la lista de instancias de la interface Asesoria.</li>
+        <li><b>Almacenar administrativo:</b> permite agregar un nuevo administrativo a la lista de instancias de la interface Asesoria.</li>
+        <li><b>Almacenar capacitación:</b> permite agregar una nueva capacitación a la lista de instancias de la clase Capacitación.</li>
+        <li><b>Eliminar usuario:</b> permite eliminar un usuario desde la lista de interfaces de Asesoría acuerdo con el RUN del usuario.</li>
+        <li><b>Listar usuarios:</b> permite desplegar la lista completa de usuarios, independiente del tipo. En este método solo se deben desplegar los datos de la clase usuario.</li>
+        <li><b>Listar usuarios por tipo:</b> recibe un tipo de usuario (cliente, administrador o profesional), y retorna los datos respectivos según el tipo de usuario.</li>
+        <li><b>Listar capacitaciones:</b> este método despliega las capacitaciones registradas en la lista respectiva, junto con los datos del cliente al que está asociada dicha capacitación.</li>
     </ul>
-    <li>Finalmente, cree la **clase Principal**, la que tendrá como objetivo crear una instancia de la clase Contenedor, lo que creará con ello las dos listas que considera esta clase. Posterior a esto, deberá crear un menú principal con nueve opciones: ocho para las acciones indicadas en el listado anterior, y una opción para salir del programa. En caso de que se ingrese una opción incorrecta, se debe pedir nuevamente. El programa solo terminará una vez que ingrese la opción de salida.</li>
+    <li>Finalmente, cree la <b>clase Principal</b>, la que tendrá como objetivo crear una instancia de la clase Contenedor, lo que creará con ello las dos listas que considera esta clase. Posterior a esto, deberá crear un menú principal con nueve opciones: ocho para las acciones indicadas en el listado anterior, y una opción para salir del programa. En caso de que se ingrese una opción incorrecta, se debe pedir nuevamente. El programa solo terminará una vez que ingrese la opción de salida.</li>
 </ul>
 
 **<h3>:orange_book: Algunas consideraciones:</h3>**
